@@ -10,11 +10,6 @@ O wireguard é uma ferramenta que permite a configuração de um servidor vpn co
 
 ---
 
----
-
-## Passo à passo
-
----
 
 ## 1. Atualização do sistema
 
