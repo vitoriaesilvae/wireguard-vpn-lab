@@ -1,2 +1,32 @@
-# wireguard-vpn-lab
-O objetivo deste projeto foi instalar e configurar um servidor VPN utilizando o WireGuard em um sistema Linux, permitindo que um cliente Android estabelecesse um túnel VPN seguro e acessasse a Internet através do servidor. Durante o desenvolvimento também foram estudados conceitos de criptografia assimétrica, NAT, roteamento IP, firewall e diagnóstico de redes
+# WireGuard VPN Lab
+
+Projeto desenvolvido para estudar o funcionamento do WireGuard, incluindo:
+
+- instalação do servidor
+- criação de clientes
+- configuração de NAT
+- IP Forwarding
+- Firewall
+- Handshake
+- Troubleshooting
+
+## Tecnologias
+
+- Linux Mint
+- WireGuard
+- iptables
+- UFW
+- tcpdump
+- systemd
+
+## Objetivos
+
+- Construir uma VPN funcional
+- Entender como o WireGuard funciona
+- Aprender técnicas de diagnóstico de redes
+
+## Estrutura
+
+/docs
+/configuracoes
+/imagens
