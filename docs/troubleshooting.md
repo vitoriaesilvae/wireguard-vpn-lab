@@ -14,6 +14,7 @@ Job for wg-quick@wg0.service failed…
 2. O comando retornou a linha na qual havia um erro de digitação
 
 **Solução:** corrigir os erros de ortografia no arquivo de configuração.
+---
 
 ### 2 Cliente conectava, mas não acessava a internet
 
@@ -67,7 +68,5 @@ Job for wg-quick@wg0.service failed…
         ```
         
     - Após reiniciar o serviço, consegui acessar a internet normalmente pela VPN.
-
----
 
  **Solução:** corrigir as chaves do arquivo wg0.
