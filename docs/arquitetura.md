@@ -26,7 +26,7 @@ O wireguard é uma ferramenta que permite a configuração de um servidor vpn co
 
 ## Topologia
 
-![Topologia da VPN](imagens/Topologia.png)
+![Topologia da VPN](wireguard-vpn-lab/imagens/Topologia.png)
 
 ---
 
@@ -36,7 +36,7 @@ O wireguard é uma ferramenta que permite a configuração de um servidor vpn co
 
 Os pacotes saem do cliente pelo túnel criptografado da VPN e vão até o servidor. No servidor, os pacotes são descriptografados e enviados à internet com o endereço de origem do servidor (por meio da regra de NAT/MASQUERADE). Quando os pacotes chegam da internet ao servidor, o servidor os criptografa novamente e os envia ao cliente por meio do canal VPN.
 
-![Fluxo dos pacotes](imagens/Fluxo_pacotes.png)
+![Fluxo dos pacotes](wireguard-vpn-lab/imagens/Fluxo_pacotes.png)
 
 ### Criptografia
 
