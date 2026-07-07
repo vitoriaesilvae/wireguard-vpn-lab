@@ -1,1 +1,11 @@
+[Interface] #configuração do cliente
+PrivateKey = [Chave privada do cliente] #Ela identifica o dispositivo de forma única e é utilizada durante o handshake criptográfico para provar sua identidade ao servidor.
+Address = 10.0.0.2/24 #Este é o endereço IP virtual do cliente dentro da VPN.
+DNS = 1.1.1.1 #Define qual servidor DNS será utilizado enquanto a VPN estiver conectada.(O endereço 1.1.1.1 pertence ao serviço DNS público da Cloudflare)
+
+[Peer] #configuração do servidor
+PublicKey = [Chave pública do servidor]
+Endpoint = [IP da interface onde o servidor está hospedado]:51820 #Define onde o servidor pode ser encontrado e a porta udp do wireguard.
+AllowedIPs = 0.0.0.0/0 #define quais redes serão enviadas pelo servidor VPN, nesse caso, todas.
+PersistentKeepalive = 25 #Indica que o cliente vai enviar pacotes vazios a cada 25 segundos para o servidor, a fim de manter a conexãoativa.
 
