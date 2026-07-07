@@ -1,1 +1,17 @@
+[Interface] #Configuração do servidor
+
+Address = 10.0.0.1/24 # IP e sub-márcara de rede virtual do servidor.
+
+ListenPort = 51820 # Porta udp onde o servidor ficará aguradando novas conexões.
+
+PrivateKey = [chave privada do servidor] # Identifica o servidor durante o handshake criptográfico.
+
+PostUp = iptables -A FORWARD -i wg0 -j ACCEPT; iptables -A FORWARD -o wg0 -j ACCEPT; iptables -t nat -A POSTROUTING -o wlo1 -j MASQUERADE # O parâmetro PostUp executa automaticamente comandos logo após a interface wg0 ser criada e ativada.
+PostDown = iptables -D FORWARD -i wg0 -j ACCEPT; iptables -D FORWARD -o wg0 -j ACCEPT; iptables -t nat -D # Executa automaticamente comandos quando a interface wg0 é desligada.
+
+[Peer] #Configuração dos dispositivos remotos conectados (clientes)
+
+PublicKey = [Chave pública docliente] # Identifica o cliente durante o handshake criptográfico;
+
+AllowedIPs = 10.0.0.2/32 #Indica o ip do cliente, o sufixo /32 significa que apenas um cliente pode usar o ip.
 
