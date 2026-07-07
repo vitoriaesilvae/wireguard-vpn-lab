@@ -62,3 +62,13 @@ wireguard-vpn-lab/
 ├── LICENSE
 ├── README.md
 ```
+
+## Resultado
+
+Ao final do projeto foi possível:
+
+- Configurar um servidor WireGuard em Linux;
+- Conectar um cliente Android;
+- Criar um túnel VPN funcional;
+- Encaminhar o tráfego do cliente para a Internet através do servidor;
+- Diagnosticar e corrigir problemas relacionados ao handshake, NAT e firewall.
