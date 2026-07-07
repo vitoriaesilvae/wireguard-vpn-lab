@@ -25,8 +25,3 @@ Projeto desenvolvido para estudar o funcionamento do WireGuard, incluindo:
 - Entender como o WireGuard funciona
 - Aprender técnicas de diagnóstico de redes
 
-## Estrutura
-
-/docs
-/configuracoes
-/imagens
